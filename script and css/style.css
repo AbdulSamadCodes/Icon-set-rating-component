@@ -1,113 +1,215 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Arvo:wght@700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Commissioner:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lora&family=Manrope:wght@200..800&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@400;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:wght@500;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&family=Raleway&family=Red+Hat+Text:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Arvo:wght@700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Commissioner:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lora&family=Manrope:wght@200..800&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@400;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:wght@500;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&family=Raleway&family=Red+Hat+Text:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /*=========================Custom Properties========================*/
 
-:root
-{
-   /*=======Colors=====*/
+:root {
+  /*=======Colors=====*/
 
-   --color-purple:#4E4CA5;
-   --color-white:#FFFFFF;
-   --color-gray:#656568;
-   --color-green:#45A69A;
+  --color-purple: #4e4ca5;
+  --color-white: #ffffff;
+  --color-gray: #808084;
+  --color-green: #45a69a;
+  --color-purple-light: #6d6bd942;
+  --color-black-75: #454546f1;
 
-   /*=======Typography=====*/
+  /*=======Typography=====*/
 
-   --font-family:"Roboto" , sans-serif;
+  --fs-1: 20px;
+  --fs-2: 18px;
 
+  --font-family: "Roboto", sans-serif;
 }
 
 /*=========================Reset===========================*/
 
 *,
 *::after,
-*::before{
-margin:0;
-padding:0;
-box-sizing: border-box;
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-li{
-list-style:none;
+li {
+  list-style: none;
 }
 
-a{
-text-decoration:none;
-color:inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-button{
-cursor:pointer;
+button {
+  cursor: pointer;
 }
 
 button,
 a,
 span,
 input {
-display:block;
+  display: block;
 }
 
-img{
-max-width:100%;
-display:block;
-height:auto;
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 button,
-input{
-background:none;
-border:none;
-outline:none;
+input {
+  background: none;
+  border: none;
+  outline: none;
 }
 
-html{
-scroll-behavior:smooth;
-scroll-padding-top:30px;
-scrollbar-width:thin;
-font-family: var(--font-family);
-font-size:15px;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+  scrollbar-width: thin;
+  font-family: var(--font-family);
+  font-size: 15px;
 }
 
-body{
-   background-color: var(--color-purple);
+body {
+  background-color: var(--color-purple);
 }
 
 /*=========================Reused styles===========================*/
 
-.main-container{
-   padding-inline: 16px;
+.main-container {
+  padding-inline: 16px;
+}
+
+.margin_block_20px {
+  margin-block-start: 20px;
 }
 
 /*=========================Main styles===========================*/
 
-.card-container{
-   background-color:var(--color-white);
-   margin-block-start:60px;
-   border-radius:10px;
-   padding:30px 20px 60px;
+.card-container {
+  max-width: 360px;
+  background-color: var(--color-white);
+  margin-block-start: 60px;
+  border-radius: 13px;
+  padding: 30px 8px 60px;
+  margin-inline: auto;
 }
 
-.tabs-holder{
-   display: flex;
-   padding:10px 12px;
-   border-radius:13px;
-   justify-content: space-between;
-   border: 1px solid var(--color-gray);
-   gap: 10px;
+.tabs-holder {
+  display: flex;
+  padding: 10px 5px;
+  border-radius: 13px;
+  justify-content: space-between;
+  border: 1px solid rgba(21, 20, 20, 0.171);
+  gap: 10px;
 }
 
-.tab-btn{
-   padding:14px 14px ;
-   background-color: var(--color-green);
-   color: var(--color-white);
-   border-radius:12px;
-   font-weight: 700;
+.tab-btn {
+  padding: 14px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  box-shadow: 0px 4px 1px 1px rgba(37, 36, 36, 0.112);
+  color: var(--color-black-75);
 }
 
+.basic-tab {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
 
+.card-content {
+  padding-block-start: 40px;
+  padding-inline: 20px;
+}
 
+.card_subtitle {
+  font-weight: 800;
+  color: var(--color-gray);
+  letter-spacing: 0.7px;
+}
 
+.card_price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.card_price h2 {
+  font-size: var(--fs-1);
+}
 
+.icon_set_price {
+  font-size: var(--fs-2);
+  font-weight: 800;
+}
 
+.card-text {
+  font-weight: 700;
+  color: var(--color-black-75);
+}
+
+.card-info > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.check-icon {
+  background-color: var(--color-purple-light);
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.check-icon i {
+  color: var(--color-purple);
+}
+
+.info-text {
+  font-weight: 700;
+  color: var(--color-black-75);
+}
+
+.card-info > div:nth-child(2) {
+  margin-block-start: 15px;
+}
+
+.btn {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  max-width: max-content;
+  margin-inline: auto;
+  margin-block-start: 30px;
+  padding: 15px 80px;
+  border-radius: 25px;
+  font-size: 15px;
+}
+
+/*=========Media queries===========*/
+
+@media (min-width: 768px) {
+  .card-container {
+    padding: 40px 15px 60px;
+    max-width: 400px;
+  }
+
+  .tabs-holder {
+    padding-inline: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-container {
+    max-width: 450px;
+  }
+
+  .tab-btn {
+    padding: 17px 25px;
+  }
+
+  .btn {
+    padding-inline: 100px;
+  }
+}
